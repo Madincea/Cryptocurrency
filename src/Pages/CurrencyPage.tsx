@@ -36,7 +36,9 @@ export default function CurrencyPage() {
           <p>{currency.description}</p>
         </>
       ) : (
-        <CircularProgress />
+        <div className="spinner">
+          <CircularProgress />
+        </div>
       )}
     </div>
   );

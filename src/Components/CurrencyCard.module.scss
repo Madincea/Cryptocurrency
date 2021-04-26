@@ -1,0 +1,45 @@
+.card_container {
+  .card {
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+    padding: 10px 5%;
+  }
+  .title_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    img {
+      margin: 10px 10px 10px 0;
+    }
+    .name {
+      font-size: 1.2rem;
+      color: var(--blue1);
+      font-weight: bold;
+    }
+  }
+  .country_container {
+    display: flex;
+    justify-content: space-between;
+    a {
+      text-decoration-line: none;
+      cursor: pointer;
+      color: var(--blue3);
+    }
+  }
+  .actions, .content {
+    padding: 16px 0;
+  }
+  .details_button {
+    text-decoration-line: none;
+    background-color: var(--blue3);
+    color: #ffffff;
+    &:hover {
+      background-color: var(--blue3);
+    }
+  }
+}
+@media (min-width: 900px) {
+  .card_container img {
+    width: 5rem;
+  }
+}

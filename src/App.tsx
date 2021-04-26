@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import Dashboard from "../src/Pages/Dashboard";
 import CurrencyPage from "../src/Pages/CurrencyPage";
 let routes = [

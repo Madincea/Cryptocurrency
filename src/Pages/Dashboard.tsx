@@ -4,6 +4,7 @@ import { INITIAL_PAGE_SIZE } from "../utils/constants";
 import CurrencyCard from "../Components/CurrencyCard";
 import Pagination from "@material-ui/lab/Pagination";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import styles from "./Dashboard.module.scss";
 
 export default function Dashboard() {
   const [currencyList, setCurrencyList] = useState([]);
@@ -31,14 +32,26 @@ export default function Dashboard() {
   }, [exchangesUrl, page]);
 
   if (loading) {
-    return <CircularProgress />;
+    return (
+      <div className="spinner">
+        <CircularProgress />{" "}
+      </div>
+    );
   }
   return (
     <>
-      {currencyList.map((currency, index) => (
-        <CurrencyCard key={index} currency={currency} />
-      ))}
-      <Pagination count={10} page={page} onChange={handlePageChange} />
+      <h1>Cryptocurrency Exchanges</h1>
+      <div className={styles.dashboard_container}>
+        {currencyList.map((currency, index) => (
+          <CurrencyCard key={index} currency={currency} />
+        ))}
+        <Pagination
+          className={styles.pagination}
+          count={10}
+          page={page}
+          onChange={handlePageChange}
+        />
+      </div>
     </>
   );
 }
