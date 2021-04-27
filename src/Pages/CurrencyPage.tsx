@@ -50,27 +50,33 @@ export default function CurrencyPage() {
                 )}
                 {currency.description && <p>{currency.description}</p>}
                 <div className={styles.social_media}>
-                  <a
-                    href={`https://www.facebook.com//${currency.facebook_url}`}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={facebookIcon} />
-                  </a>
-                  <a
-                    href={`https://twitter.com/${currency.twitter_handle}`}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={twitterIcon} />
-                  </a>
-                  <a
-                    href={`https://www.reddit.com///${currency.reddit_url}`}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <img src={redditIcon} />
-                  </a>
+                  {currency.facebook_url && (
+                    <a
+                      href={`https://www.facebook.com//${currency.facebook_url}`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={facebookIcon} alt={"facebookIcon"} />
+                    </a>
+                  )}
+                  {currency.twitter_handle && (
+                    <a
+                      href={`https://twitter.com/${currency.twitter_handle}`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={twitterIcon} alt={"twitterIcon"} />
+                    </a>
+                  )}
+                  {currency.reddit_url && (
+                    <a
+                      href={`https://www.reddit.com///${currency.reddit_url}`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img src={redditIcon} alt={"redditIcon"} />
+                    </a>
+                  )}
                 </div>
               </div>
             </CardContent>
