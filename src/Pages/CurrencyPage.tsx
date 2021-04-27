@@ -76,7 +76,7 @@ export default function CurrencyPage() {
             </CardContent>
             <CardActions className={styles.actions}>
               <Link to={`/dashboard`}>
-                <Button className={styles.backButton}>Back</Button>
+                <Button className="cardButton">Back</Button>
               </Link>
             </CardActions>
           </Card>

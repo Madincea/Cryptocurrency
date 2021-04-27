@@ -1,6 +1,6 @@
 .card_container {
   .card {
-    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+    box-shadow: var(--shadow);
     padding: 10px 5%;
   }
   .title_container {
@@ -28,14 +28,6 @@
   }
   .actions, .content {
     padding: 16px 0;
-  }
-  .details_button {
-    text-decoration-line: none;
-    background-color: var(--blue3);
-    color: #ffffff;
-    &:hover {
-      background-color: var(--blue3);
-    }
   }
 }
 @media (min-width: 900px) {

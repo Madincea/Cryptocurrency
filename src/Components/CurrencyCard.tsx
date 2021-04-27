@@ -30,7 +30,7 @@ export default function CurrencyCard({ currency }: Props) {
         </CardContent>
         <CardActions className={styles.actions}>
           <Link to={`/currency/${currency.id}`}>
-            <Button className={styles.details_button}>Details</Button>
+            <Button className="cardButton">Details</Button>
           </Link>
         </CardActions>
       </Card>
