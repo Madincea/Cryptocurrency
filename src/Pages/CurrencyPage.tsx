@@ -34,7 +34,7 @@ export default function CurrencyPage() {
           <Card variant="outlined" className={styles.card}>
             <CardContent className={styles.content}>
               <div className={styles.title_container}>
-                <img src={currency.image} alt="icon"></img>
+                <img src={currency.image} alt="icon" />
                 <span className={styles.name}>{currency.name}</span>
               </div>
               <div className={styles.info}>

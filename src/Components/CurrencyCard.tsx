@@ -17,24 +17,19 @@ export default function CurrencyCard({ currency }: Props) {
       <Card variant="outlined" className={styles.card}>
         <CardContent className={styles.content}>
           <div className={styles.title_container}>
-            <img src={currency.image} alt="icon"></img>
+            <img src={currency.image} alt="icon" />
             <span className={styles.name}>{currency.name}</span>
             <span>Rank: {currency.trust_score_rank}</span>
           </div>
           <div className={styles.country_container}>
             <span>{currency.country} </span>{" "}
-            <a
-              href={currency.url}
-              className={styles.card_link}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={currency.url} target="_blank" rel="noreferrer">
               Link
             </a>
           </div>
         </CardContent>
         <CardActions className={styles.actions}>
-          <Link to={`/currency/${currency.id}`}>
+          <Link to={`/currency/${currency.id}`} className={styles.card_link}>
             <Button className="cardButton">Details</Button>
           </Link>
         </CardActions>
