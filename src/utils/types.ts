@@ -7,4 +7,7 @@ export type Currency = {
   url: string;
   image: string;
   trust_score_rank: number;
+  facebook_url: string;
+  twitter_handle: string;
+  reddit_url: string;
 };
