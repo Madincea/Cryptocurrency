@@ -23,7 +23,12 @@ export default function CurrencyCard({ currency }: Props) {
           </div>
           <div className={styles.country_container}>
             <span>{currency.country} </span>{" "}
-            <a href={currency.url} target="_blank" rel="noreferrer">
+            <a
+              href={currency.url}
+              className={styles.card_link}
+              target="_blank"
+              rel="noreferrer"
+            >
               Link
             </a>
           </div>

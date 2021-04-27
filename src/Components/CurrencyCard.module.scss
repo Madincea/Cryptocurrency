@@ -30,6 +30,11 @@
     padding: 16px 0;
   }
 }
+
+.card_link {
+  text-decoration: none;
+}
+
 @media (min-width: 900px) {
   .card_container img {
     width: 5rem;
